@@ -13,6 +13,9 @@ module.exports = {
       {test: /\.css$/, use: ['style-loader', 'css-loader'] }
     ]
   },
+  resolve: {
+    extensions: ['.js', '.jsx']
+  },
   plugins: [new HtmlWebpackPlugin({
     template: 'app/index.html'
   })]
