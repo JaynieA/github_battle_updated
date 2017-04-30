@@ -1,5 +1,6 @@
-let path = require('path');
-let HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
+const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry:'./app/index.jsx',
@@ -22,5 +23,6 @@ module.exports = {
   },
   plugins: [new HtmlWebpackPlugin({
     template: 'app/index.html'
-  })]
+  }),
+  new webpack.EnvironmentPlugin(['GITHUB_API_ID', 'GITHUB_API_SECRET'])]
 };
