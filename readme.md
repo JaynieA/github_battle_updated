@@ -1,11 +1,11 @@
 # Description
 
-Building a React application while following the **recently updated** React Fundamentals [tutorial](https://reacttraining.com/online)
+Building a React application while following the **recently updated** [React Fundamentals tutorial](https://reacttraining.com/online).
 
 ## Installation
 
 From the root directory, run:
-`npm install`
+`npm install`, then
 `npm start`
 
 # Technologies Used
