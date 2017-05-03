@@ -1,4 +1,4 @@
-const axios = require('axios');
+import axios from 'axios';
 const id = process.env.GITHUB_API_ID;
 const sec = process.env.GITHUB_API_SECRET;
 let params = "?client_id=" + id + "&client_secret=" + sec;
@@ -52,7 +52,7 @@ function sortPlayers(players) {
   });
 }
 
-module.exports = {
+let api = {
   battle: function(players) {
     return axios.all(players.map(getUserData))
     .then(sortPlayers)
@@ -66,3 +66,5 @@ module.exports = {
       });
   }
 };
+
+export default api;

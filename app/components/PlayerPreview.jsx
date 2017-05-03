@@ -1,5 +1,5 @@
-const React = require('react');
-const PropTypes = require('prop-types');
+import React from 'react';
+import PropTypes from 'prop-types';
 
 function PlayerPreview(props) {
   return(
@@ -17,4 +17,4 @@ function PlayerPreview(props) {
   )
 }
 
-module.exports = PlayerPreview;
+export default PlayerPreview;

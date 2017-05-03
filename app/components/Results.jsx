@@ -1,10 +1,10 @@
-const React = require('react');
-const queryString = require('query-string');
-const PropTypes = require('prop-types');
-const api = require('../utils/api');
-const Link = require('react-router-dom').Link;
-const PlayerPreview = require('./PlayerPreview');
-const Loading = require('./Loading');
+import React from 'react';
+import queryString from 'query-string';
+import PropTypes from 'prop-types';
+import api from '../utils/api';
+import {Link} from 'react-router-dom';
+import PlayerPreview from './PlayerPreview';
+import Loading from './Loading';
 
 function Profile(props) {
   let info = props.info;
@@ -91,7 +91,7 @@ class Results extends React.Component{
 
     if (loading === true) {
       return (
-        <Loading /> 
+        <Loading />
       )
     }
 
@@ -123,4 +123,4 @@ class Results extends React.Component{
   }
 }
 
-module.exports = Results;
+export default Results;
